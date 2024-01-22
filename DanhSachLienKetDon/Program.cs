@@ -95,6 +95,32 @@ namespace DanhSachLienKetDon
                 q.Next = null;
             }
         }
+        // Phuong thuc xoa nut co gia x
+        public void DeleteNode(int x)
+        {
+            if (Head != null) // Danh sach co phan tu
+            {
+                Node p = Head;
+                Node q = null; // nut tam de xac dinh nut truoc p
+                // Duyet danh sach de tim nut co gia tri can xoa
+                while (p != null && p.Info != x)
+                {
+                    q = p;
+                    p = p.Next;
+                }
+                // Xoa nut p
+                if (p != null) // Tim thay nut can xoa
+                {
+                    if (p == Head)
+                        DeleteHead();
+                    else
+                    {
+                        q.Next = p.Next;
+                        p.Next = null;
+                    }
+                }
+            }
+        }
         // Phuong thuc duyet danh sach (Xuat danh sach)
         public void ProcessList()
         {
@@ -126,6 +152,11 @@ namespace DanhSachLienKetDon
             l.ProcessList();
             l.DeleteLast();
             Console.WriteLine("\n Danh sach lien ket sau khi xoa nut cuoi:");
+            l.ProcessList();
+            Console.Write(" Nhap gia tri x can xoa:");
+            int x = int.Parse(Console.ReadLine());
+            l.DeleteNode(x);
+            Console.WriteLine("\n Danh sach lien ket sau khi xoa nut co gia tri x:");
             l.ProcessList();
             Console.ReadLine();
         }
