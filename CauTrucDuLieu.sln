@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT02", "BT02\BT02.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NganXep", "NganXep\NganXep.csproj", "{1EB5C813-D693-4590-B646-B589EFBA0F8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CauTrucCay", "CauTrucCay\CauTrucCay.csproj", "{AB0D81FE-09A1-42F4-BDF1-BFD874809482}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1EB5C813-D693-4590-B646-B589EFBA0F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB5C813-D693-4590-B646-B589EFBA0F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB5C813-D693-4590-B646-B589EFBA0F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0D81FE-09A1-42F4-BDF1-BFD874809482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0D81FE-09A1-42F4-BDF1-BFD874809482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0D81FE-09A1-42F4-BDF1-BFD874809482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0D81FE-09A1-42F4-BDF1-BFD874809482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
